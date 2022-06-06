@@ -102,6 +102,18 @@ a{
   margin: 0 auto;
 }
 
+/* grid styles */
+
+.grid-col-2{
+display:grid;
+grid-template-columns: repeat(2,1fr);
+gap:2rem;
+justify-content: space-between;
+align-items: center;
+}
+.grid-reversed :first-child{
+  order:2;
+}
 /* Buttons */
 .btn {
   cursor: pointer;
@@ -147,11 +159,11 @@ a{
 
 }
 .bg-secondary{
-  color:var(--color-secondary);
+  background-color:var(--color-secondary);
   color:#fff;
 }
 .bg-extra{
-  color:var(--color-extra);
+  background-color:var(--color-extra);
   color:#000;
 }
 
